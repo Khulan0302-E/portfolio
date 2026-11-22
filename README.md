@@ -79,7 +79,8 @@ Light Mode болон Dark Mode сонголттой байх.
 Сонгосон горимыг localStorage ашиглан хадгалах.
 
 Дараагийн удаа вэбсайтад нэвтрэхэд өмнөх сонголтыг автоматаар сэргээх.
-## Технологи
+
+Технологи
 
 | Хэрэгсэл | Юунд |
 |---|---|
@@ -87,7 +88,8 @@ Light Mode болон Dark Mode сонголттой байх.
 | CSS (custom properties, media query) | Загвар, горим, responsive |
 | Vercel | Байршуулалт |
 
-## Бүтэц
+
+Бүтэц
 
 ```
 src/
@@ -116,14 +118,14 @@ public/Khulan_CV.jpg     «Download CV» товчоор татагдах CV зу
     projects.js          бүтээлүүдийн жагсаалт
 ```
 
-## Локал дээр ажиллуулах
+Локал дээр ажиллуулах
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Эх сурвалж
+Эх сурвалж
 - Загварын санаа: 21st.dev дээрх «Glassmorphism Portfolio Block» (shadcn/ui, Tailwind, framer-motion)-ийг энгийн CSS, React-аар дахин бичсэн
 - Icon: Lucide (ISC) загвараар SVG
 - Лого: Devicon (devicon.dev, MIT)
