@@ -685,6 +685,45 @@ main {
   font-weight: 700;
   font-size: 15px;
 }
+.skill__body {
+  flex: 1;
+  min-width: 0;
+}
+.skill__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+.skill__pct {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+}
+.skill__bar {
+  display: block;
+  height: 12px;
+  margin-top: 10px;
+  border: 2px solid var(--brut);
+  border-radius: 3px;
+  background: var(--glass);
+  overflow: hidden;
+}
+.skill__fill {
+  display: block;
+  height: 100%;
+  width: var(--level);
+  background: repeating-linear-gradient(-45deg, var(--tag) 0 6px, #eab308 6px 12px);
+  border-right: 2px solid var(--brut);
+  transform-origin: left;
+  animation: fill 0.9s cubic-bezier(0.3, 1, 0.4, 1) both;
+  animation-delay: calc(0.15s + var(--i) * 50ms);
+}
+@keyframes fill {
+  from {
+    transform: scaleX(0);
+  }
+}
 .skill__name {
   display: block;
   font-family: 'JetBrains Mono', monospace;

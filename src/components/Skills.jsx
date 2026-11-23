@@ -55,9 +55,22 @@ export default function Skills() {
             <span className="skill__icon">
               <SkillIcon skill={s} />
             </span>
-            <span>
-              <span className="skill__name">{s.name}</span>
+            <span className="skill__body">
+              <span className="skill__head">
+                <span className="skill__name">{s.name}</span>
+                <span className="skill__pct">{s.level}%</span>
+              </span>
               <span className="skill__tag">{s.tag}</span>
+              <span
+                className="skill__bar"
+                role="progressbar"
+                aria-valuenow={s.level}
+                aria-valuemin={0}
+                aria-valuemax={100}
+                aria-label={`${s.name} — ${s.level}%`}
+              >
+                <span className="skill__fill" style={{ '--level': `${s.level}%` }} />
+              </span>
             </span>
           </li>
         ))}
